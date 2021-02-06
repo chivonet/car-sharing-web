@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Nunito Sans', sans-serif;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+}
+
+.container {
+    width: 1088px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #00000066;
+    border: 2px solid #FFFFFF33;
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+header .logo a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+header .logo a span {
+    color: #FFF;
+}
+
+header img {
+    vertical-align: middle;
+    margin-top: -7px;
+    margin-right: 5px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav a {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 34px 40px;
+}
+header nav a:hover {
+    background-color: #FFFFFF33;
+}
+
+section.banner {
+    background-image: url("../img/Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 807px;
+    margin-top: -94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+section.banner:before {
+    content: "";
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    width:100%;
+    height: 100%;
+}
+
+section.banner .links {
+    padding-top: 100px;
+}
+
+section.banner .links a{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+section.banner .links a:first-of-type, section.banner .links a:nth-of-type(2):hover {
+    border: 1px solid red;
+    font-weight: bold;
+    color: #FFF;
+    background-color: red;
+    padding: 22px 55px;
+    border-radius: 44px;
+}
+
+section.banner .links a:nth-of-type(2), section.banner .links a:first-of-type:hover{
+    border: 1px solid white;
+    font-weight: bold;
+    color: red;
+    background-color: white;
+    padding: 22px 55px;
+    border-radius: 44px;
+}
+
+section.banner p{
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+section.banner .container{
+    z-index: 1;
+}
+
+section.banner .arrow {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -25px;
+    background-color: red;
+    padding: 15px 18px;
+    border-radius: 30px;
+}
+
+section.banner h1{
+    font-size: 90px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+section > h1 {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 60px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > h1::before, section > h1::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    display:block;
+    margin: 0 5px;
+}
+
+section.blog, section.service, section.contact {
+    padding-bottom: 100px;
+}
+
+section.blog > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.blog div.container > div {
+    width: 352px;
+}
+
+section.blog div.container h1{
+    font-size: 19px;
+    font-weight: normal;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    color: #6A6A6A;
+    margin: 25px 0;
+}
+
+section.blog div.container p{
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Open Sans Sans', sans-serif;
+    color: #6A6A6A;
+    margin: 25px 0 35px;
+}
+
+section.blog div.container a{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: red;
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 22px;
+    transition: 0.5s;
+}
+
+section.blog div.container a:hover{
+    color: red;
+    background-color: white;
+}
+
+section.service {
+    background-color:#28272C;
+}
+
+section.service h1{
+    color: white;
+}
+
+
+section.service > div {
+    display: flex;
+    justify-content: space-between;
+}
+section.service div.container > div {
+    width: 231px;
+    text-align: center;
+}
+
+section.service div.container h1{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    color: #FFF;
+    margin: 25px 0;
+}
+
+section.service div.container p{
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    color: #6A6A6A;
+    margin: 25px 0 35px;
+}
+
+section.service div.container a{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: red;
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 22px;
+    transition: 0.5s;
+}
+
+section.service div.container a:hover{
+    color: red;
+    background-color: white;
+    border: 1px solid white;
+}
+
+section.contact > div {
+    display: flex;
+    justify-content: center;
+}
+
+section.contact form {
+    padding-left: 16px;
+    width: 444px;
+}
+
+section.contact form input[type="text"], section.contact form input[type="email"], section.contact form textarea{
+    padding: 15px;
+    box-sizing: border-box;
+    width: 444px;
+    margin: 0 0 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+}
+
+section.contact form input[type="text"]:focus, section.contact form input[type="email"]:focus, section.contact form textarea:focus{
+    outline:0;
+    box-shadow: 0 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+}
+
+section.contact form input::placeholder, section.contact form textarea::placeholder {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0;
+    color: #B2B2B2;
+}
+
+section.contact form input[type="submit"]{
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 52px;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    transition: 0.5s;
+    background: #FFFFFF;
+    box-shadow: 0 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    margin-top: 10px;
+}
+
+section.contact form input[type="submit"]:hover {
+    background: #FF0000;
+    color: white;
+}
+
+section.contact form div:last-of-type {
+    position: relative;
+}
+
+section.contact form input[type="submit"]{
+    position:absolute;
+    right: 0;
+}
+
+section.contact form input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+section.contact form label {
+    width: 444px;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    letter-spacing: 0;
+    color: #B2B2B2;
+    cursor: pointer;
+    display: flex;
+}
+
+section.contact form span {
+    height: 22px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    border: 1px solid #D1D1D1;
+    cursor: pointer;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+
+section.contact form input[type="checkbox"]:checked + span {
+    background-image: url("../img/IconCheck.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    background-color: #28272C;
+}
+
+footer .logo-footer{
+    padding: 40px 0 20px;
+}
+
+footer .logo-footer a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+footer .logo-footer a span {
+    color: #FFF;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-top: -7px;
+    margin-right: 5px;
+}
+
+footer div.links {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+footer div.links a {
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer div.links a:hover, footer div.links a:active {
+    color: red;
+}
+
+footer ul {
+    list-style: none;
+    margin-right: 200px;
+}
+
+footer ul li{
+    padding: 10px 0;
+}
+
+footer .copyright {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: #D1D1D1;
+    font-size: 12px;
+    font-family: 'Nunito Sans', sans-serif;
+}

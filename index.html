@@ -5,9 +5,138 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Car Sharing</title>
 </head>
 <body>
-
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/Icon.svg" alt="Car Sharing Logo">CAR <span>SHARING</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Blog">Blog</a></li>
+                    <li><a href="#Service">Service</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="banner" id="Home">
+        <div class="container">
+            <h1>Car Sharing</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="links">
+                <a href="#">Share a car</a> <a href="#">Key features</a>
+            </div>
+        </div>
+        <div class="arrow">
+            <img src="img/IconArrowDown.svg" alt="arrow">
+        </div>
+    <!--    <div class="more"><img src="" alt=""></div>-->
+    </section>
+    <section class="blog" id="Blog">
+        <h1>Blog</h1>
+        <div class="container">
+            <div>
+                <img src="img/photo1.png" alt="Photo 1">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ea, eaque labore nostrum quam?</p>
+                <a href="#">Read more</a>
+            </div>
+            <div>
+                <img src="img/photo2.png" alt="Photo 2">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ea, eaque labore nostrum quam?</p>
+                <a href="#">Read more</a>
+            </div>
+            <div>
+                <img src="img/photo3.png" alt="Photo 3">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ea, eaque labore nostrum quam?</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </section>
+    <section class="service" id="Service">
+        <h1>Service</h1>
+        <div class="container">
+            <div>
+                <img src="img/mini1.png" alt="Mini 1">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ea, eaque labore nostrum quam?</p>
+                <a href="#">Read more</a>
+            </div>
+            <div>
+                <img src="img/mini2.png" alt="Mini 2">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ea, eaque labore nostrum quam?</p>
+                <a href="#">Read more</a>
+            </div>
+            <div>
+                <img src="img/mini3.png" alt="Mini 3">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ea, eaque labore nostrum quam?</p>
+                <a href="#">Read more</a>
+            </div>
+            <div>
+                <img src="img/mini4.png" alt="Mini 4">
+                <h1>Lorem ipsum dolor sit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolores ea, eaque labore nostrum quam?</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="Contact">
+        <h1>Contact</h1> <!--before after - nadać inline block content na pusty-->
+        <div class="container">
+            <img src="img/FormPhoto.png" alt="Form Photo">
+            <form action="">
+                <div class="row">
+                    <input name="name" type="text" placeholder="Type your name">
+                </div>
+                <div class="row">
+                    <input name="email" type="email" placeholder="Type your e-mail">
+                </div>
+                <div class="row">
+                    <textarea name="message" rows="6" placeholder="Type your message"></textarea>
+                </div>
+                <div class="row">
+                    <label class="checkbox"><input type="checkbox" name="read"><span></span>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
+                </div>
+                <div class="row">
+                    <input type="submit" value="send">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="logo-footer">
+                <a href="#"><img src="img/LogoFooter.svg" alt="Form Photo">Car <span>Sharing</span></a>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Share</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Price</a></li>
+                    <li><a href="">Fleet</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Share</a></li>
+                </ul>
+                <div class="copyright">
+                    Copyright &copy; Car Sharing
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
